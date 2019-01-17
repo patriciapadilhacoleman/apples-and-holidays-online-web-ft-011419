@@ -69,6 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     pseason = ""
     pholiday = ""
+    plist = ""
    
     pseason = season.to_s.capitalize
     
@@ -77,7 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     holiday.each do |name, list|
       
-      
+      pholiday = name.to_s.capitalize
       
     end
         
