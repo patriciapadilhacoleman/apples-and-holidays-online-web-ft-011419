@@ -83,7 +83,6 @@ def all_supplies_in_holidays(holiday_hash)
       tarray = name.to_s.split('_')
       tarray.each { |x| x.capitalize!}
       pholiday = tarray.join(' ')
-      binding.pry
       plist = list.join(", ")
       puts "  #{pholiday}: #{plist}"
       
