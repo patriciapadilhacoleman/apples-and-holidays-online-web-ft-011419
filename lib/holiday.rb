@@ -79,6 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |name, list|
       
       pholiday = name.to_s.capitalize
+      binding.pry
       plist = list.join(", ")
       puts "  #{pholiday}: #{plist}"
       
