@@ -100,7 +100,7 @@ def all_holidays_with_bbq(holiday_hash)
    
     holiday.each do |name, list|
       
-      if list.include
+      if list.include?
       
     end
         
