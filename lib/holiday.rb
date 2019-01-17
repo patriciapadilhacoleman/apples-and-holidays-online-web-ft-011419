@@ -70,6 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
     pseason = ""
     pholiday = ""
     plist = ""
+    tarray = []
    
     pseason = season.to_s.capitalize
     
@@ -79,7 +80,8 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |name, list|
       
       
-      pholiday = name.to_s.split('_').join(' ').capitalize
+      tarray = name.to_s.split('_')
+      pholiday = tarray.join(' ').capitalize
       binding.pry
       plist = list.join(", ")
       puts "  #{pholiday}: #{plist}"
